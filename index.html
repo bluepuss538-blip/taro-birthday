@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#123d3b">
+  <meta name="description" content="A private birthday experience made for Taro.">
+  <meta property="og:title" content="For Taro — November 6">
+  <meta property="og:description" content="Make a wish. There is something waiting for you.">
+  <meta property="og:image" content="assets/images/12.webp">
+  <title>For Taro — November 6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="assets/audio/making-memories.mp3?v=2" type="audio/mpeg">
+  </audio>
+
+  <div class="noise" aria-hidden="true"></div>
+
+  <main>
+    <section class="wish-scene" id="wishScene" aria-labelledby="wishTitle">
+      <div class="sky-specks" aria-hidden="true"></div>
+      <p class="eyebrow">6 November · for Taro</p>
+
+      <div class="wish-copy">
+        <p class="script-line">before anything else…</p>
+        <h1 id="wishTitle">Make a wish.</h1>
+        <p>Hold the button and let the candles go.</p>
+      </div>
+
+      <div class="cake-stage" aria-label="A birthday cake with three lit candles">
+        <div class="candle candle-one"><span class="flame"></span></div>
+        <div class="candle candle-two"><span class="flame"></span></div>
+        <div class="candle candle-three"><span class="flame"></span></div>
+        <div class="smoke smoke-one"></div>
+        <div class="smoke smoke-two"></div>
+        <div class="smoke smoke-three"></div>
+        <div class="cake-icing"></div>
+        <div class="cake-body"><span>06</span></div>
+        <div class="cake-plate"></div>
+      </div>
+
+      <button class="hold-button" id="holdButton" type="button">
+        <span class="hold-ring" aria-hidden="true"></span>
+        <span class="hold-label">Hold to blow</span>
+      </button>
+      <p class="hold-hint" id="holdHint">Keep holding until the circle completes.</p>
+
+      <article class="childhood-card" id="childhoodCard" aria-hidden="true">
+        <div class="tape tape-left" aria-hidden="true"></div>
+        <div class="tape tape-right" aria-hidden="true"></div>
+        <img src="assets/images/childhood.webp" alt="A childhood birthday calendar made for Taro">
+        <div class="childhood-copy">
+          <span>November 6 · the early chapters</span>
+          <h2>Little Taro,<br>already worth celebrating.</h2>
+          <button class="paper-button" id="enterExperience" type="button">Keep going <span>→</span></button>
+        </div>
+      </article>
+    </section>
+
+    <div class="experience" id="experience" hidden>
+      <div class="floating-controls">
+        <button class="icon-button" id="musicToggle" type="button" aria-label="Pause background music" aria-pressed="true">
+          <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="control-text">music</span>
+        </button>
+      </div>
+
+      <nav class="chapter-nav" aria-label="Birthday chapters">
+        <a href="#translated"><span>01</span> Taro, translated</a>
+        <a href="#memories"><span>02</span> The days we keep</a>
+        <a href="#finale"><span>03</span> One thing left</a>
+      </nav>
+
+      <section class="chapter quiz-chapter" id="translated" aria-labelledby="translatedTitle">
+        <div class="chapter-heading reveal">
+          <p class="eyebrow dark">Chapter one · guess his answer</p>
+          <h2 id="translatedTitle">Taro, translated.</h2>
+          <p>Four questions. No pressure—he has already given away most of the answers.</p>
+        </div>
+
+        <div class="quiz-machine reveal" id="quizMachine">
+          <div class="quiz-topline">
+            <span id="quizCounter">01 / 04</span>
+            <div class="quiz-progress"><span id="quizProgress"></span></div>
+          </div>
+          <h3 id="quizQuestion"></h3>
+          <div class="quiz-options" id="quizOptions"></div>
+          <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+          <button class="paper-button quiz-next" id="quizNext" type="button" hidden>Next question <span>→</span></button>
+        </div>
+
+        <div class="inside-jokes" id="insideJokes" hidden>
+          <p class="script-line">classified vocabulary</p>
+          <div class="sticker-row">
+            <span class="word-sticker yellow">Orat</span>
+            <span class="word-sticker coral">Tear</span>
+            <span class="word-sticker teal">Sabar ka phal mitha hota hae</span>
+            <span class="word-sticker cream">Apou Philip ka only step son 🤠</span>
+            <span class="word-sticker outline">always</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter memories-chapter" id="memories" aria-labelledby="memoriesTitle">
+        <div class="chapter-heading light reveal">
+          <p class="eyebrow">Chapter two · a small archive</p>
+          <h2 id="memoriesTitle">The days we keep.</h2>
+          <p>Not every important moment announces itself. Some of them simply stay.</p>
+        </div>
+
+        <div class="memory-anchor reveal">
+          <div class="anchor-number">01</div>
+          <div>
+            <p class="script-line">Lumami Tower</p>
+            <h3>Where two people stopped pretending it was nothing.</h3>
+            <p>“You have no idea how I was shivering.”</p>
+          </div>
+          <img src="assets/images/04.webp" alt="Taro and her partner smiling together" loading="lazy">
+        </div>
+
+        <div class="photo-archive" aria-label="A collection of photographs of Taro and the days they keep">
+          <figure class="snapshot tall tilt-left reveal">
+            <img src="assets/images/02.webp" alt="Taro standing outside in a cream dress" loading="lazy">
+            <figcaption>soft light, quiet presence</figcaption>
+          </figure>
+          <figure class="snapshot small tilt-right reveal">
+            <img src="assets/images/03.webp" alt="A candid moment of Taro taking a photograph" loading="lazy">
+          </figure>
+          <figure class="snapshot wide reveal">
+            <img src="assets/images/12.webp" alt="Taro looking out over mountains at sunset" loading="lazy">
+            <figcaption>Somewhere between the silence and the sky.</figcaption>
+          </figure>
+          <figure class="snapshot small tilt-left reveal">
+            <img src="assets/images/05.webp" alt="Taro sitting outside in a cap" loading="lazy">
+          </figure>
+          <figure class="snapshot tall tilt-right reveal">
+            <img src="assets/images/08.webp" alt="Taro holding a bouquet of flowers" loading="lazy">
+            <figcaption>flowers for the girl who notices the little things</figcaption>
+          </figure>
+          <figure class="snapshot square reveal">
+            <img src="assets/images/07.webp" alt="Taro and her partner holding hands" loading="lazy">
+            <figcaption>the kind of ordinary worth keeping</figcaption>
+          </figure>
+          <figure class="snapshot tall tilt-left reveal">
+            <img src="assets/images/10.webp" alt="Taro standing on a mountain under a clear blue sky" loading="lazy">
+          </figure>
+          <figure class="snapshot small tilt-right reveal">
+            <img src="assets/images/11.webp" alt="Taro smiling at a café table" loading="lazy">
+            <figcaption>Taro, caught being quietly unforgettable.</figcaption>
+          </figure>
+          <figure class="snapshot square reveal">
+            <img src="assets/images/09.webp" alt="Taro and her partner dressed for a special day" loading="lazy">
+          </figure>
+          <figure class="snapshot tall tilt-left reveal">
+            <img src="assets/images/01.webp" alt="Taro holding a framed set of photographs" loading="lazy">
+            <figcaption>proof that memories find ways to hold us back</figcaption>
+          </figure>
+        </div>
+
+        <div class="walk-note reveal">
+          <span class="walk-number">02</span>
+          <p class="script-line">the campus walks</p>
+          <h3>The evenings that made tomorrow feel far away.</h3>
+          <p>Hours in the park, her friends teasing from behind, and two people who were embarrassed and proud at exactly the same time.</p>
+        </div>
+
+        <div class="duet-card reveal">
+          <div class="duet-copy">
+            <p class="eyebrow dark">A little of us</p>
+            <h3>Some memories come with their own soundtrack.</h3>
+            <p>Press play. The background music will step aside.</p>
+            <a class="song-link" href="https://youtu.be/khfjNJvUDzk?si=ZCDkZ8U6gw5CYy77" target="_blank" rel="noreferrer">Play one of Taro’s favourites ↗</a>
+          </div>
+          <video id="duetVideo" controls playsinline preload="metadata" poster="assets/images/duet-poster.webp">
+            <source src="assets/video/our-song.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+
+      <section class="chapter finale-chapter" id="finale" aria-labelledby="finaleTitle">
+        <div class="finale-glow" aria-hidden="true"></div>
+        <div class="chapter-heading reveal">
+          <p class="eyebrow">Chapter three · one thing left</p>
+          <h2 id="finaleTitle">Some dates still know how to open doors.</h2>
+          <p>Four digits. One day that belongs to both of you.</p>
+        </div>
+
+        <div class="lock-panel reveal" id="lockPanel">
+          <div class="lock-icon" aria-hidden="true"><span></span></div>
+          <div class="code-display" id="codeDisplay" aria-label="Four digit code entry">
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <p class="lock-status" id="lockStatus" aria-live="polite">Enter the date.</p>
+          <div class="keypad" id="keypad" aria-label="Number keypad"></div>
+        </div>
+
+        <div class="secret-reveal" id="secretReveal" hidden>
+          <p class="script-line">the door is open</p>
+          <h3>This one was kept for last.</h3>
+          <div class="secret-video-wrap">
+            <video id="secretVideo" controls playsinline preload="metadata" poster="assets/images/secret-poster.webp">
+              <source src="assets/video/secret-note.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <details class="final-letter" id="finalLetter">
+            <summary>Open his letter <span>↘</span></summary>
+            <div class="letter-paper">
+              <p class="letter-greeting">To my favourite person,</p>
+              <p>Happy Birthday, Taro.</p>
+              <p>Of all the unexpected and beautiful things life has brought my way, meeting you is one I’m especially grateful for. Sometimes I wonder how two people, living their own separate stories, find their way into each other’s lives. I suppose some connections really are a kind of cosmic entanglement.</p>
+              <p>I thank God for you, for your life, and for the privilege of knowing and loving you. My prayer is that this new chapter brings you closer to Him, strengthens your faith, and fills your heart with the kind of peace that only He can give.</p>
+              <p>I hope you never stop becoming the person God has created you to be. And I hope that, through every season of life, we continue to grow—not only in our love for each other, but also in our love for Him.</p>
+              <p>My love for you truly is ineffable. You are a blessing I never want to take for granted.</p>
+              <p class="letter-signoff">Now and always. ❤️</p>
+            </div>
+          </details>
+        </div>
+
+        <footer>
+          <span>made for Taro</span>
+          <span>06 · 11</span>
+        </footer>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
